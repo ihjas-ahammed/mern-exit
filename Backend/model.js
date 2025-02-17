@@ -1,3 +1,6 @@
+const mongoose = require('mongoose');
+const { Schema } = mongoose;
+
 //Write missing codes here
 const schema = mongoose.Schema({
   title: String,
@@ -6,3 +9,4 @@ const schema = mongoose.Schema({
 });
 
 //Write missing codes here
+module.exports = mongoose.model('BlogModel', schema);
